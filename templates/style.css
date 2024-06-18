@@ -9,7 +9,7 @@ body {
     max-width: 100%;
     background-color: rgb(255, 228, 198);
     display: grid;
-    grid-template-columns: 400px 1fr; /* Primeiro coluna fixa para o formulário e a segunda coluna flexível para os cartões */
+    grid-template-columns: 400px 1fr;
     grid-gap: 20px;
     padding: 20px;
 }
@@ -44,8 +44,8 @@ body {
     border-radius: 15px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
     margin: 5px;
-    position: relative; /* necessário para posicionamento absoluto */
-    padding: 20px; /* garantir espaço interno */
+    position: relative;
+    padding: 20px;
 }
 
 .title {
