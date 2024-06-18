@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+    max-width: 100%;
+    background-color: rgb(255, 228, 198);
+    display: grid;
+    grid-template-columns: 400px 1fr; /* Primeiro coluna fixa para o formulário e a segunda coluna flexível para os cartões */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+#todoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 168, 69);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    height: fit-content;
+}
+
+.output {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.todo_lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    background-color: rgb(255, 168, 69);
+    width: 270px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    position: relative; /* necessário para posicionamento absoluto */
+    padding: 20px; /* garantir espaço interno */
+}
+
+.title {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bimagem {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.imagem{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.imagem_remover {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#submit{
+    height: 32px;
+    width: 100px;
+    background-color: rgb(255, 202, 142);
+    border-color: rgb(51, 52, 52);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#excluir{
+    height: 32px;
+    width: 130px;
+    border-color: rgb(51, 50, 50);
+    background-color: rgb(255, 202, 142);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+#title, #description, #completed {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+    border: 1px solid #f3c4c4;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.completed_false {
+    text-decoration: none;
+    color: red;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.description {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+

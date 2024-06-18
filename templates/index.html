@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="todoForm">
+        <label for="title">Título</label>
+            <input type="text" name="title" id="title" placeholder="Insira o título da tarefa">
+        <label for="description">Descricão</label>
+            <input type="text" name="description" id="description" placeholder="Insira a descricão da tarefa">
+        <label for="completed">Concluído</label>
+            <select name="completed" id="completed">
+                <option value="false">Não</option>
+                <option value="true">Sim</option>
+            </select>
+             <br>
+        
+        <div class="wrap">
+            <input type="submit" value="Enviar" id="submit">
+            <input type="submit" value="Deletar Tudo" id="excluir"><br>
+            </div>
+    </form>
+
+    <div class="output">
+    </div>
+
+</body>
+</html>
