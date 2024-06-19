@@ -1,4 +1,4 @@
-const mainUrl = "http://0.0.0.0:8000/todos/";
+const mainUrl = "http://localhost:8000/todos/";
 const submit  = document.getElementById("todoForm");
 const title   = document.getElementById("title");
 const description = document.getElementById("description");
@@ -63,7 +63,7 @@ excluir.addEventListener("click", (e) => {
 
 
 function getTodos() {
-    const mainUrl = "http://0.0.0.0:8000/todos/";
+    const mainUrl = "http://localhost:8000/todos/";
 
     fetch(mainUrl)
     .then(res => res.json())
