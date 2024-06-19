@@ -34,13 +34,13 @@ submit.addEventListener("submit", (e) => {
             title.value = "";
             description.value = "";
             completed.value = "false";
+            
         }
     })
     .catch(error => {
         console.error("Erro ao criar o todo:", error);
     });
 });
-
 
 excluir.addEventListener("click", (e) => {
     e.preventDefault();
@@ -153,6 +153,9 @@ function getTodos() {
 }
 
 
+getTodos();
+
+
 function atualizar(url, element){
 
     const tudoUpdate = {
@@ -183,4 +186,3 @@ function atualizar(url, element){
     
 }
 
-getTodos();
